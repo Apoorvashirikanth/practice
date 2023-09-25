@@ -26,4 +26,4 @@ else{
     console.log("unbalanced");
 }
 
-console.log(stack)
+// console.log(stack)
