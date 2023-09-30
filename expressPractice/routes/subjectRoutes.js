@@ -18,6 +18,12 @@ let subjectList = [
 
 router.get('/subjects', (req,res) => {
     res.send(subjectList);
+});
+
+router.post('/subjects', (req,res) => {
+    console.log(req.body);
+    subjectList.push(req.body);
+    res.send(201);
 })
 
 module.exports = router;
