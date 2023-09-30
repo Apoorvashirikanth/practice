@@ -1,6 +1,7 @@
 const express = require('express');
 const studyRoute = require('./routes/studyRoutes');
 const toolsRoute = require('./routes/toolsRoutes');
+const subjectsRoute = require('./routes/subjectRoutes');
 
 let app = express();
 
@@ -16,6 +17,7 @@ app.use((req,res,next) => {                      //middleware function, its mand
 
 app.use(studyRoute);
 app.use(toolsRoute);
+app.use(subjectsRoute);
 
 app.listen(PORT, () => console.log(`Running server on port ${PORT}!`));
 
