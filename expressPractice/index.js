@@ -2,6 +2,7 @@ const express = require('express');
 const studyRoute = require('./routes/studyRoutes');
 const toolsRoute = require('./routes/toolsRoutes');
 const subjectsRoute = require('./routes/subjectRoutes');
+const cookieParser = require('cookie-parser');
 
 let app = express();
 
@@ -14,6 +15,8 @@ app.use((req,res,next) => {                      //middleware function, its mand
     console.log(`${req.method} : ${req.url}`);
     next();
 });
+
+app.use(cookieParser());
 
 app.use(studyRoute);
 app.use(toolsRoute);
