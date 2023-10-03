@@ -37,4 +37,14 @@ r.post('/study', (req,res) => {
     res.send(201);
 })
 
+//sessions
+
+r.post('/study/store' , (req,res) => {
+    const { topic, hours} = req.body;
+    const storeItems = { topic, hours};
+    console.log(storeItems);
+    // res.send(201);
+    res.send(req.sessionID);
+})
+
 module.exports = r;
