@@ -7,6 +7,7 @@ import Hello from './components/Hello.js';
 import Message from './components/Message.js';
 import Counter from './components/Counter.js';
 import EventHandling from './components/EventHandling.js';
+import ConditionalComponent from './components/ConditionalCompnent.js';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Hello /> */}
       {/* <Message></Message> */}
       {/* <Counter /> */}
-      <EventHandling />
+      {/* <EventHandling /> */}
+      <ConditionalComponent />
     </div>
   );
 }
