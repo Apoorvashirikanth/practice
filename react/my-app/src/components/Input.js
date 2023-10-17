@@ -5,19 +5,24 @@ const Input = () => {
     const [txt, newTxt] = useState('initial text');
 
     function updateText(){
-        newTxt("updated text from user")
+        const updatedTxt = document.getElementById("my-id").value;
+        newTxt(updatedTxt)
+        console.log(txt)
+        document.getElementById("my-para").innerText = updateText;
     }
 
     return(
         <div>
+        
             <label> name:</label>
                 
-            <input  value={txt}
+            <input  id="my-id"
                     reqired
-                    onChange={(e) => newTxt(e.target.value)}/>
-            <button onClick={updateText}>update</button>
-            <h1> {txt} </h1>
+                    value={txt}/>
+            <button onClick={updateText()}>update</button>
 
+            <p id="my-para"> {txt} </p>
+            
             <label> practicing checkboxes</label>
             <input type="checkbox" />
 
@@ -33,6 +38,7 @@ const Input = () => {
                 <option>nobody</option>
             </select>
             </div>
+          <p>{txt}</p>
         </div>
     )
 }

@@ -1,35 +1,18 @@
-// const page = (
-//     <div>   
-//     <img src="./react-logo.png" width="40px"></img>
-//     <h1> Fun facts about react </h1>
-//     <ul>
-//         <li>It is declarative</li>
-//         <li>composable</li>
-//         <li>hirable skill</li>
-//         <li>manged by facebook</li>
-//     </ul>
-//     </div>
-// );
-
-// ReactDOM.render(page, document.getElementById("root"));
-
-// custom components
 
 function Header(){
-     return(
-        <header>
-            <nav className = "nav">
-                <img src = "./react-logo.png" className="nav-logo" />
-                <ul className = "nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
+    return(
+       <header>
+           <nav className = "nav">
+               <img src = "./react-logo.png" className="nav-logo" />
+               <ul className = "nav-items">
+                   <li>Pricing</li>
+                   <li>About</li>
+                   <li>Contact</li>
+               </ul>
+           </nav>
+       </header>
 
-    )
-}
+   )
 
 function Footer(){
     return(
